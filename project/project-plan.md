@@ -19,7 +19,7 @@ This project seeks to leverage data on bicycle traffic within those tourist zone
 <!-- Describe each datasources you plan to use in a section. Use the prefic "DatasourceX" where X is the id of the datasource. -->
 
 ### Datasource1: Bicycle traffic data Cologne
-* Metadata URL: https://mobilithek.info/offers/-2236641647976866002
+* Metadata URL: [https://mobilithek.info/offers/-2236641647976866002](https://offenedaten-koeln.de/dataset/fahrrad-verkehrsdaten-koeln/resource/ae82dfde-9c87-4ced-a96d-11ef23f79d4e#{})
 * Data URL: https://offenedaten-koeln.de/node/41646/download
 * Data Type: CSV
 
