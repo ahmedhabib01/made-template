@@ -40,5 +40,6 @@ The dataset includes the location, direction of traffic, type of bicycle counter
 1. Data Acquisition
 2. Data Integration
 3. Data Cleaning
+4. Visualization and Insights
 
 [i1]: https://github.com/jvalue/made-template/issues/1
