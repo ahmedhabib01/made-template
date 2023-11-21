@@ -23,7 +23,7 @@ This project focuses on analyzing parking violation data in Bonn to identify and
 * Metadata URL: https://opendata.bonn.de/dataset/240e8388-40e2-448d-81e3-bd7a5c6149b4/resource/f0121fa3-1f94-4a00-9013-b2bfdd5e083e
 * Data URL: https://opendata.bonn.de/sites/default/files/Parkverstoesse2022.csv
 * Data Type: CSV
-The dataset on parking violations in Bonn includes details such as date, time, location, and violation type, offering a comprehensive record of offenses. This dataset serves as a vital source for pinpointing hotspots and analyzing patterns in parking violations.
+* The dataset on parking violations in Bonn includes details such as date, time, location, and violation type, offering a comprehensive record of offenses. This dataset serves as a vital source for pinpointing hotspots and analyzing patterns in parking violations.
 
 The dataset includes the location, direction of traffic, type of bicycle counter being used.
 
@@ -31,7 +31,7 @@ The dataset includes the location, direction of traffic, type of bicycle counter
 * Metadata URL:  https://stadtplan.bonn.de/
 * Data URL: https://stadtplan.bonn.de/csv?Thema=17790
 * Data Type: CSV
-The street directory dataset for Bonn provides comprehensive details about streets, roads, and intersections, encompassing names, locations, and characteristics. When merged with parking violation data, this integration facilitates the pinpointing of streets or areas with a high frequency of parking violations.
+* The street directory dataset for Bonn provides comprehensive details about streets, roads, and intersections, encompassing names, locations, and characteristics. When merged with parking violation data, this integration facilitates the pinpointing of streets or areas with a high frequency of parking violations.
 
 ## Work Packages
 
