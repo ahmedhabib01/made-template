@@ -6,7 +6,6 @@ from io import StringIO
 
 
 def Extract_Data(file_path):
-    # Read the XLS file using pandass
     url = file_path
     response = requests.get(url)
     response.raise_for_status()
@@ -40,9 +39,8 @@ def Transform_StreetDirectory(data, selected_columns=None):
 
 
 def Load_DB(data, table_name):
-
-    print("Performing database operations...")
-    engine = create_engine(f"sqlite:///Traffic.sqlite")
+    
+    engine = create_engine("sqlite:///../data/Traffic.sqlite")
     data.to_sql(table_name, engine, if_exists="replace")
 
 
