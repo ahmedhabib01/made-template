@@ -1,31 +1,24 @@
 import pandas as pd
 import sqlalchemy
 from sqlalchemy import create_engine
-import requests
-from io import StringIO
 
 
 def ExtractData(url):
     print("Performing data extraction from the url provided ")
-    path_to_data = url
     try:
-        response = requests.get(path_to_data)
-        response.raise_for_status()
-        csv_data = StringIO(response.text)
-        original_df = pd.read_csv(csv_data, delimiter=';')
-        # print(original_df)
+        original_df = pd.read_csv(url, sep=';', low_memory=False)
+        #print(original_df)
+        return original_df
     except Exception as ex:
         print("File reading failed because ", str(ex))
         return None
-    print("Extraction completed successfully ")
 
-    return original_df
+    print("Extraction completed successfully ")
 
 
 def TransformData(Data_TrainCSV):
     print("Performing Data Transformation ")
     try:
-
         # Drop Status column
         Data_TrainCSV = Data_TrainCSV.drop('Status', axis=1)
 
