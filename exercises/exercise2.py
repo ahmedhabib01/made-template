@@ -68,7 +68,7 @@ def TransformData(Data_TrainCSV):
 def LoadData(Data_Train_Transformed, table_name):
     print("Creating SQLite DB from transformed data ")
     try:
-        engine = create_engine("sqlite:///trainstops.sqlite")
+        engine = create_engine(f"sqlite:///trainstops.sqlite")
         Data_Train_Transformed.to_sql(table_name, engine, if_exists="replace", index=False)
         print("Database created successfully ")
     except Exception as ex:
