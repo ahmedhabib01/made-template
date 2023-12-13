@@ -6,9 +6,9 @@ pipeline CarPipeline
 		url: "https://www-genesis.destatis.de/genesis/downloads/00/tables/46251-0021_00.csv";
 	}
 
-	block CharacterDecoder oftype TextFileInterpreter
+	block TextDecoder oftype TextFileInterpreter
     {
-		encoding: "ASCII";
+		encoding: "latin2";
 	}
 
 	block Rows oftype TextRangeSelector
@@ -62,9 +62,9 @@ pipeline CarPipeline
 			"diesel" oftype PositiveInt,
 			"gas" oftype PositiveInt,
 			"electro" oftype PositiveInt,
-			"hybrid" oftype PositveInt,
-			"plugInHybrid" oftype PositveInt,
-			"others" oftype PositveInt
+			"hybrid" oftype PositiveInt,
+			"plugInHybrid" oftype PositiveInt,
+			"others" oftype PositiveInt
 		];
 	}
 
@@ -75,7 +75,7 @@ pipeline CarPipeline
 	}
 
     DataExtractor
-    ->CharacterDecoder
+    ->TextDecoder
 	->Rows
     ->CSVDecoder
 	->RemovedColumn
