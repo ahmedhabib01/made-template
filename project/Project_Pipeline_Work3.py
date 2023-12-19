@@ -2,7 +2,6 @@ import pandas as pd
 import sqlalchemy
 from sqlalchemy import create_engine
 import requests
-from io import StringIO
 
 
 def Extract_Data(file_path):
@@ -64,7 +63,6 @@ def ETL_Drive():
     Database = 'Traffic.sqlite'
     Load_DB(ParkingViolation_Selected, 'Parking_Violations')
     Load_DB(StreetDirectory_Selected, 'Street_Directory')
-
 
 if __name__ == "__main__":
     ETL_Drive()
