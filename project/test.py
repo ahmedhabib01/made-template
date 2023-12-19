@@ -10,7 +10,7 @@ def test_data_extract(path):
 
 
 def test_load_data(table_name, db_file):
-    engine = create_engine(f"sqlite:///../data/{db_file}")
+    engine = create_engine(f"sqlite:///./data/{db_file}")
     inspector = inspect(engine)
 
     exists = inspector.has_table(table_name)
