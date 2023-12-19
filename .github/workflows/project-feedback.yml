@@ -22,7 +22,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip3 install sqlalchemy pandas requests numpy
+          pip3 install sqlalchemy pandas requests numpy StringIO
 
       - name: Run Pipeline
         run: python project/Project_Pipeline_Work3.py
