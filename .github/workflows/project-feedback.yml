@@ -28,7 +28,5 @@ jobs:
         run: python project/Project_Pipeline_Work3.py
   
       - name: Test Pipeline
-        run: |
-          chmod +x ./project/test.sh
-          ./project/test.sh
+        run: python project/test.sh
         
