@@ -5,7 +5,7 @@ import pipeline
 def test_data_extract(path):
     df = pipeline.Extract_Data(path)
     assert not df.empty, "Data Extraction Failed"
-    print("test_data_extract: Test Passed")
+    print("Data Extraction: Test Passed")
     return df
 
 
@@ -16,7 +16,7 @@ def test_load_data(table_name, db_file):
     exists = inspector.has_table(table_name)
     assert exists, f"The table '{table_name}' does not exist in the database."
 
-    print("test_load_data: Table exists, Test Passed")
+    print("Load Data: Table exists, Test Passed")
 
 def Test_Pipeline():
     parking_violation_url = "https://opendata.bonn.de/sites/default/files/Parkverstoesse2022.csv"
