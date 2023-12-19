@@ -2,6 +2,7 @@ import pandas as pd
 import sqlalchemy
 from sqlalchemy import create_engine
 import requests
+from io import StringIO
 
 
 def Extract_Data(file_path):
@@ -38,7 +39,6 @@ def Transform_StreetDirectory(data, selected_columns=None):
 
 
 def Load_DB(data, table_name):
-    
     engine = create_engine("sqlite:///./data/Traffic.sqlite")
     data.to_sql(table_name, engine, if_exists="replace")
 
