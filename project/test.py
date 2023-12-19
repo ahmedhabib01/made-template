@@ -1,9 +1,9 @@
 import pandas as pd
 from sqlalchemy import create_engine, inspect
-import pipeline
+import Project_Pipeline_Work3
 
 def test_data_extract(path):
-    df = pipeline.Extract_Data(path)
+    df = Project_Pipeline_Work3.Extract_Data(path)
     assert not df.empty, "Data Extraction Failed"
     print("Data Extraction: Test Passed")
     return df
