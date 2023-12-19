@@ -29,6 +29,6 @@ jobs:
   
       - name: Test Pipeline
         run: |
-          chmod +x project/tests.sh
+          chmod u+x project/tests.sh
           python project/tests.sh
         
