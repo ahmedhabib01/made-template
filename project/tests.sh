@@ -1,8 +1,8 @@
 #!/bin/sh
 
-./Project_Pipeline_Work3.py
+./project/Project_Pipeline_Work3.py
 echo "Pipeline Executed"
-./test.py
+./project/test.py
 echo "Pipeline Tested"
 
 exit
