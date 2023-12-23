@@ -24,5 +24,8 @@ jobs:
         run: |
           pip3 install sqlalchemy pandas requests numpy
 
-      - name: Run and Test Project Pipeline
-        run: .main/project/tests.sh
+      - name: Run Pipeline
+        run: python project/Project_Pipeline_Work3.py
+        
+      - name: Test Pipeline
+        run: python project/test.py
