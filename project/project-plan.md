@@ -43,6 +43,5 @@ The dataset includes the location, direction of traffic, type of bicycle counter
 4. Exploratory Data Analysis
 5. Hotspot Identification
 6. Visualization
-7. Reporting
 
 [i1]: https://github.com/jvalue/made-template/issues/1
