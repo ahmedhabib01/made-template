@@ -3,6 +3,8 @@ import pandas as pd
 from urllib.request import urlretrieve
 import os
 import sqlite3
+import sqlalchemy
+from sqlalchemy import create_engine
 
 # Download and unzip data
 zip_url = "https://www.mowesta.com/data/measure/mowesta-dataset-20221107.zip"
@@ -36,18 +38,9 @@ df["Batterietemperatur"] = (df["Batterietemperatur"] * 9/5) + 32
 # Example validation: Check if "Geraet" is a positive integer
 df = df[df["Geraet"].astype(str).str.isdigit() & (df["Geraet"] > 0)]
 
-# Write data into SQLite database
-db_path = "temperatures.sqlite"
+
+print("Creating SQLite DB from data ")
 table_name = "temperatures"
-
-# Connect to SQLite database
-conn = sqlite3.connect(db_path)
-
-# Write DataFrame to SQLite table
-df.to_sql(table_name, conn, if_exists='replace', index=False)
-
-# Close the database connection
-conn.close()
-
-# Clean up: Remove downloaded ZIP file and extracted folder
-os.remo
+engine = create_engine(f"sqlite:///temperatures.sqlite")
+df.to_sql(table_name, engine, if_exists="replace", index=False)
+print("Database created successfully ")
