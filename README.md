@@ -6,10 +6,7 @@ Before you begin, make sure you have [Python](https://www.python.org/) and [Jayv
 
 
 ## Project Work
-Your data engineering project will run alongside lectures during the semester. We will ask you to regularly submit project work as milestones so you can reasonably pace your work. All project work submissions **must** be placed in the `project` folder.
 
-### Exporting a Jupyter Notebook
-Jupyter Notebooks can be exported using `nbconvert` (`pip install nbconvert`). For example, to export the example notebook to html: `jupyter nbconvert --to html examples/final-report-example.ipynb --embed-images --output final-report.html`
 
 
 ## Exercises
