@@ -1,7 +1,7 @@
 # `Parking Violation in Bonn, Germany`
 
 This code repository contains exercises and a project developed during the course **Methods of Advanced Data Engineering** in winter semester 2023/24 of the MSc. Data Science at FAU Erlangen. 
-Within it is the published automated data pipeline which downloads the data from a specified URL, transform data, and connects with database to load the data in it using different programming tools such python and jayvee
+Within it is the published automated data pipeline which downloads the data from a specified URL, transform data, and connects with database to load the data in it using different programming tools such as python/javyee.
 
 
 ## Background of project
