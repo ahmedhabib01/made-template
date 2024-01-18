@@ -19,9 +19,11 @@ For this project two datasets have been used being downloaded from different URL
 Following datasets have been used.
 
 [1]: The dataset on parking violations in Bonn includes details such as date, time, location, and violation type, offering a comprehensive record of offenses. This dataset serves as a vital source for pinpointing hotspots and analyzing patterns in parking violations.
+
 [Dataset 1: https://opendata.bonn.de/sites/default/files/Parkverstoesse2022.csv]
 
 [2]: The street directory dataset for Bonn provides comprehensive details about streets, roads, and intersections, encompassing names, locations, and characteristics. When merged with parking violation data, this integration facilitates the pinpointing of streets or areas with a high frequency of parking violations.
+
 [Dataset  2: https://stadtplan.bonn.de/csv?Thema=17790]
 
 
