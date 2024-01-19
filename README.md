@@ -11,7 +11,8 @@ Parking violation pose a widespread challenge in urban regions, leading to disru
 ## Description of project
 This project focuses on analyzing parking violation data in Bonn to identify and visualize hotspots in areas or streets with frequent violations. The integration of datasets, Parking Violation Data and street directory data provides valuable insights for urban planners, law enforcement agencies, and parking management companies. By strategically addressing these hotspots, people of different areas of interest can optimize parking infrastructure, enhance enforcement strategies, and implement targeted solutions for more efficient parking solutions.
 
-
+I cordially encourage you to explore the in-depth analysis provided in this project [Report: https://github.com/ahmedhabib01/made-template/blob/main/project/report.ipynb]. 
+The purpose of the study is to support well-informed decision-making and strategies for resolving issues related to parking violations in Bonn.
 ## Datasets
 
 For this project two datasets have been used being downloaded from different URLs.
